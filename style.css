@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Floating Hearts */
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  top: -10px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* Envelope Screen */
+#envelope-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+#envelope {
+  width: 200px;
+}
+
+/* Letter Screen */
+#letter-container {
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.letter-window {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 350px;
+}
+
+.cat {
+  width: 150px;
+  margin: 15px 0;
+}
+
+#letter-buttons img {
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#final-text {
+  display: none;
+  margin-top: 20px;
+  color: #ff4d6d;
+}
+
+#nextBtn {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#nextBtn:hover {
+  background-color: #ff1e4d;
+}

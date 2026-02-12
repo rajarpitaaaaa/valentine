@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Letter 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ❤️ Floating Hearts -->
+  <div class="hearts"></div>
+
+  <!-- Envelope Screen -->
+  <div id="envelope-container">
+    <img src="envelope.png" id="envelope">
+    <p>♡ Letter for You ♡</p>
+  </div>
+
+  <!-- Letter Screen -->
+  <div id="letter-container">
+    <div class="letter-window">
+
+      <h1 id="letter-title">Will you be my Valentine?</h1>
+
+      <img src="cat_heart.gif" id="letter-cat" class="cat">
+
+      <div id="letter-buttons">
+        <img src="yes.png" class="yes-btn">
+        <img src="no.png" class="no-btn">
+      </div>
+
+      <div id="final-text">
+        <p>
+          <strong>Happy Valentine’s Day My Love ❤️</strong><br><br>
+          If I date you..
+          If i date you, I want to really known you,not just the easy facts.
+          I want your stories, your fears, your quiet thoughts at night.
+          Tell me about your childhood, your scares, your mistakes, and the moments that shaped you.
+          Tell me what still hurts and what makes you feel samll sometimes.
+          I want honesty, even when it's messy.
+          Because if I choose you, I'm choosing you seriously.
+          I'm not here to play. I want something real that lasts.
+          U r my not only my gf u r my whole life my everything my wife 💍✨
+          Love You Darling 💗💗
+        </p>
+
+        <button id="nextBtn">Next 💖</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🎵 Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="love.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Music Start Script -->
+  <script>
+    document.addEventListener("click", function () {
+      const music = document.getElementById("bgMusic");
+      music.volume = 0.5;  /* adjust volume here */
+      music.play();
+    }, { once: true });
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
